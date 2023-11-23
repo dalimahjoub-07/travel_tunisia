@@ -137,7 +137,24 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 35, 195, 250),
         title: const Center(
-          child: Text('travel guide:'),
+          child: Text.rich(
+            TextSpan(
+              children: <TextSpan>[
+                TextSpan(
+                    text: 'travel guide :',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 255, 255, 255))),
+                TextSpan(
+                    text: ' hostel, Gîte, rando, camp, resto',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11)),
+              ],
+            ),
+          ),
         ),
       ),
       body: Container(
@@ -179,9 +196,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     }
                                   },
                                   child: Container(
-                                    padding: const EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(1.0),
                                     color:
-                                        const Color.fromARGB(255, 27, 189, 94),
+                                        const Color.fromARGB(255, 7, 189, 62),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -194,14 +211,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                           ),
                                           style: const TextStyle(
                                               color: Colors.white,
-                                              fontSize: 20),
+                                              fontSize: 25),
                                         ),
                                         const SizedBox(width: 20),
                                         const Image(
                                           image: AssetImage(
                                               'lib/assets/logo-whatsapp-128.png'),
-                                          width: 40.0,
-                                          height: 40.0,
+                                          width: 60.0,
+                                          height: 60.0,
                                         ),
                                       ],
                                     ),
