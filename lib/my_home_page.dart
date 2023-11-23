@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (item['type'] == 'file' &&
               item['name'] != null &&
               item['download_url'] != null &&
-              item['name'].endsWith('.whatsapp')) {
+              item['name'].endsWith('.link')) {
             whatsappLinks.add(item['download_url']);
           }
         }
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 35, 195, 250),
         title: const Center(
-          child: Text('Sncft Horaire'),
+          child: Text('travel guide:'),
         ),
       ),
       body: Container(

@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:6:5-34:19
-MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:6:5-34:19
+MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\518111e08d93c16bc666f5016f25f03d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\518111e08d93c16bc666f5016f25f03d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.10.1] C:\Users\dvl\.gradle\caches\transforms-3\6ee4246d9abac3f2706798696b169c47\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
@@ -12,14 +12,14 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dv
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\dvl\.gradle\caches\transforms-3\6ee4246d9abac3f2706798696b169c47\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-MERGED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
+ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\2bd4bcf7edde35867619ac3bea578f90\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\518111e08d93c16bc666f5016f25f03d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.browser:browser:1.5.0] C:\Users\dvl\.gradle\caches\transforms-3\6912cac4a321b07bdf803772b8de567d\transformed\browser-1.5.0\AndroidManifest.xml:17:1-22:12
@@ -39,35 +39,35 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\dvl\.gra
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\dvl\.gradle\caches\transforms-3\33e08ea0cc9fd5d059167265056b1f01\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\dvl\.gradle\caches\transforms-3\8d03a0b64560754b8a48fcfc51e947ae\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\dvl\.gradle\caches\transforms-3\be6fcf85dcecb8bd53c9f90aa92aeba4\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:1-35:12
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:1-35:12
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-sdk
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\2bd4bcf7edde35867619ac3bea578f90\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\2bd4bcf7edde35867619ac3bea578f90\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\518111e08d93c16bc666f5016f25f03d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
@@ -106,22 +106,22 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\dvl\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\dvl\.gradle\caches\transforms-3\8d03a0b64560754b8a48fcfc51e947ae\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\dvl\.gradle\caches\transforms-3\be6fcf85dcecb8bd53c9f90aa92aeba4\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\dvl\.gradle\caches\transforms-3\be6fcf85dcecb8bd53c9f90aa92aeba4\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\dvl\Desktop\NF\taf\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dvl\Desktop\NF\travel-guide-tunisia\android\app\src\debug\AndroidManifest.xml
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\dvl\.gradle\caches\transforms-3\518111e08d93c16bc666f5016f25f03d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required
