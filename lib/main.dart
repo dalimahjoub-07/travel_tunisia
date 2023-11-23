@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sncftv1/my_home_page.dart';
+import 'package:travelguidetunisiav1/my_home_page.dart';
 
 void main() => runApp(const MyApp());
 
