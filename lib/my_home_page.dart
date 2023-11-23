@@ -72,6 +72,14 @@ class _MyHomePageState extends State<MyHomePage> {
               item['download_url'] != null &&
               item['name'].endsWith('.jpeg')) {
             imageUrls.add(item['download_url']);
+          } else {
+            item['type'] == 'file' &&
+                item['name'] != null &&
+                item['download_url'] != null &&
+                item['name'].endsWith('.jpg');
+            {
+              imageUrls.add(item['download_url']);
+            }
           }
         }
 
