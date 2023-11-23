@@ -139,21 +139,12 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Center(
           child: Text.rich(
             TextSpan(
-              children: <TextSpan>[
-                TextSpan(
-                    text: 'travel guide :',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 255, 255, 255))),
-                TextSpan(
-                    text: ' hostel, Gîte, rando, camp, resto',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 255, 255, 255),
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 11)),
-              ],
-            ),
+                text: 'Camp, Rando, Gîte, Resto, Hostel',
+                style: TextStyle(
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 11)),
           ),
         ),
       ),
@@ -196,7 +187,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     }
                                   },
                                   child: Container(
-                                    padding: const EdgeInsets.all(1.0),
+                                    padding: const EdgeInsets.all(0.5),
                                     color:
                                         const Color.fromARGB(255, 7, 189, 62),
                                     child: Row(
@@ -210,10 +201,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 : '',
                                           ),
                                           style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
                                               color: Colors.white,
-                                              fontSize: 25),
+                                              fontSize: 23),
                                         ),
-                                        const SizedBox(width: 20),
+                                        const SizedBox(width: 25),
                                         const Image(
                                           image: AssetImage(
                                               'lib/assets/logo-whatsapp-128.png'),
