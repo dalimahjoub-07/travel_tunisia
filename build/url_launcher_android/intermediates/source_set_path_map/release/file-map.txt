@@ -6,9 +6,9 @@ io.flutter.plugins.urllauncher.url_launcher_android-jetified-annotation-experime
 io.flutter.plugins.urllauncher.url_launcher_android-lifecycle-runtime-2.3.1-5 C:\Users\dvl\.gradle\caches\transforms-3\d527349b99caec46f6a37ce2d52a171e\transformed\lifecycle-runtime-2.3.1\res
 io.flutter.plugins.urllauncher.url_launcher_android-main-6 C:\Users\dvl\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.2.0\android\src\main\res
 io.flutter.plugins.urllauncher.url_launcher_android-release-7 C:\Users\dvl\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.2.0\android\src\release\res
-io.flutter.plugins.urllauncher.url_launcher_android-pngs-8 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\generated\res\pngs\release
-io.flutter.plugins.urllauncher.url_launcher_android-resValues-9 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\generated\res\resValues\release
-io.flutter.plugins.urllauncher.url_launcher_android-rs-10 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\generated\res\rs\release
-io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-11 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
-io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-12 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-io.flutter.plugins.urllauncher.url_launcher_android-merged_res-13 C:\Users\dvl\Desktop\NF\taf\build\url_launcher_android\intermediates\merged_res\release
+io.flutter.plugins.urllauncher.url_launcher_android-pngs-8 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\generated\res\pngs\release
+io.flutter.plugins.urllauncher.url_launcher_android-resValues-9 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\generated\res\resValues\release
+io.flutter.plugins.urllauncher.url_launcher_android-rs-10 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\generated\res\rs\release
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-11 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-12 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.urllauncher.url_launcher_android-merged_res-13 C:\Users\dvl\Desktop\NF\travel-guide-tunisia\build\url_launcher_android\intermediates\merged_res\release

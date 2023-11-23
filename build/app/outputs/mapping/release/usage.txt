@@ -903,8 +903,7 @@ androidx.core.content.res.GradientColorInflaterCompat$ColorStops
 androidx.core.content.res.GradientColorInflaterCompat
 androidx.core.content.res.GrowingArrayUtils
 androidx.core.content.res.ResourcesCompat$Api15Impl
-androidx.core.content.res.ResourcesCompat$Api21Impl:
-    private void <init>()
+androidx.core.content.res.ResourcesCompat$Api21Impl
 androidx.core.content.res.ResourcesCompat$Api23Impl
 androidx.core.content.res.ResourcesCompat$Api29Impl
 androidx.core.content.res.ResourcesCompat$ColorStateListCacheEntry
@@ -913,26 +912,7 @@ androidx.core.content.res.ResourcesCompat$FontCallback
 androidx.core.content.res.ResourcesCompat$ThemeCompat$Api23Impl
 androidx.core.content.res.ResourcesCompat$ThemeCompat$Api29Impl
 androidx.core.content.res.ResourcesCompat$ThemeCompat
-androidx.core.content.res.ResourcesCompat:
-    public static final int ID_NULL
-    private static final java.lang.String TAG
-    private void <init>()
-    private static void addColorStateListToCache(androidx.core.content.res.ResourcesCompat$ColorStateListCacheKey,int,android.content.res.ColorStateList,android.content.res.Resources$Theme)
-    public static void clearCachesForTheme(android.content.res.Resources$Theme)
-    private static android.content.res.ColorStateList getCachedColorStateList(androidx.core.content.res.ResourcesCompat$ColorStateListCacheKey,int)
-    public static android.graphics.Typeface getCachedFont(android.content.Context,int)
-    public static int getColor(android.content.res.Resources,int,android.content.res.Resources$Theme)
-    public static android.content.res.ColorStateList getColorStateList(android.content.res.Resources,int,android.content.res.Resources$Theme)
-    public static android.graphics.drawable.Drawable getDrawableForDensity(android.content.res.Resources,int,int,android.content.res.Resources$Theme)
-    public static float getFloat(android.content.res.Resources,int)
-    public static android.graphics.Typeface getFont(android.content.Context,int)
-    public static android.graphics.Typeface getFont(android.content.Context,int,android.util.TypedValue,int,androidx.core.content.res.ResourcesCompat$FontCallback)
-    public static void getFont(android.content.Context,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler)
-    private static android.util.TypedValue getTypedValue()
-    private static android.content.res.ColorStateList inflateColorStateList(android.content.res.Resources,int,android.content.res.Resources$Theme)
-    private static boolean isColorInt(android.content.res.Resources,int)
-    private static android.graphics.Typeface loadFont(android.content.Context,int,android.util.TypedValue,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler,boolean,boolean)
-    private static android.graphics.Typeface loadFont(android.content.Context,android.content.res.Resources,android.util.TypedValue,int,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler,boolean,boolean)
+androidx.core.content.res.ResourcesCompat
 androidx.core.content.res.TypedArrayUtils
 androidx.core.content.res.ViewingConditions
 androidx.core.database.CursorWindowCompat$Api15Impl
@@ -2692,10 +2672,10 @@ io.flutter.embedding.android.AndroidTouchProcessor$PointerDeviceKind
 io.flutter.embedding.android.AndroidTouchProcessor$PointerSignalKind
 io.flutter.embedding.android.AndroidTouchProcessor:
     static final int BYTES_PER_FIELD
+    static final int DEFAULT_HORIZONTAL_SCROLL_FACTOR
+    static final int DEFAULT_VERTICAL_SCROLL_FACTOR
     private static final int POINTER_DATA_FIELD_COUNT
     private static final int POINTER_DATA_FLAG_BATCHED
-io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
-    public void <init>(android.content.Context,android.util.AttributeSet)
 io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder
 io.flutter.embedding.android.FlutterActivity$NewEngineInGroupIntentBuilder
 io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder
@@ -2736,8 +2716,6 @@ io.flutter.embedding.android.FlutterImageView:
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,android.util.AttributeSet)
 io.flutter.embedding.android.FlutterPlayStoreSplitApplication
-io.flutter.embedding.android.FlutterSplashView:
-    public void <init>(android.content.Context,android.util.AttributeSet)
 io.flutter.embedding.android.FlutterSurfaceView:
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
@@ -2753,8 +2731,11 @@ io.flutter.embedding.android.FlutterView:
     public void <init>(android.content.Context,io.flutter.embedding.android.RenderMode)
     public void <init>(android.content.Context,io.flutter.embedding.android.RenderMode,io.flutter.embedding.android.TransparencyMode)
     public void <init>(android.content.Context,io.flutter.embedding.android.TransparencyMode)
+    public void addFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener)
     private android.view.View findViewByAccessibilityIdRootedAtCurrentView(int,android.view.View)
     public android.view.View findViewByAccessibilityIdTraversal(int)
+    public boolean hasRenderedFirstFrame()
+    public void removeFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener)
 io.flutter.embedding.android.KeyChannelResponder:
     private static final java.lang.String TAG
 io.flutter.embedding.android.KeyData$Type:
@@ -2778,7 +2759,6 @@ io.flutter.embedding.android.KeyboardMap:
     public static final long kUnicodePlane
     public static final long kValueMask
     public void <init>()
-io.flutter.embedding.android.SplashScreenProvider
 io.flutter.embedding.engine.FlutterEngine:
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
@@ -2886,6 +2866,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_KEY_TRACE_SKIA_ALLOWLIST
     public static final java.lang.String ARG_KEY_TRACE_STARTUP
     public static final java.lang.String ARG_KEY_TRACE_SYSTRACE
+    public static final java.lang.String ARG_KEY_TRACE_TO_FILE
     public static final java.lang.String ARG_KEY_USE_TEST_FONTS
     public static final java.lang.String ARG_KEY_VERBOSE_LOGGING
     public static final java.lang.String ARG_KEY_VM_SERVICE_PORT
@@ -2897,6 +2878,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_TRACE_SKIA_ALLOWLIST
     public static final java.lang.String ARG_TRACE_STARTUP
     public static final java.lang.String ARG_TRACE_SYSTRACE
+    public static final java.lang.String ARG_TRACE_TO_FILE
     public static final java.lang.String ARG_USE_TEST_FONTS
     public static final java.lang.String ARG_VERBOSE_LOGGING
     public static final java.lang.String ARG_VM_SERVICE_PORT
@@ -2917,6 +2899,7 @@ io.flutter.embedding.engine.dart.DartExecutor:
     public void executeDartCallback(io.flutter.embedding.engine.dart.DartExecutor$DartCallback)
     public void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint)
     public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
+    public java.lang.String getIsolateServiceId()
     public int getPendingChannelResponseCount()
     public io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public void send(java.lang.String,java.nio.ByteBuffer)
@@ -3070,12 +3053,10 @@ io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
     public static final int unsetValue
 io.flutter.embedding.engine.renderer.FlutterRenderer:
     private static final java.lang.String TAG
-    static synthetic void access$600(io.flutter.embedding.engine.renderer.FlutterRenderer,long)
     public void dispatchSemanticsAction(int,int,java.nio.ByteBuffer,int)
     public android.graphics.Bitmap getBitmap()
     void removeOnTrimMemoryListener(io.flutter.view.TextureRegistry$OnTrimMemoryListener)
     public void setAccessibilityFeatures(int)
-    private void unregisterTexture(long)
 io.flutter.embedding.engine.systemchannels.AccessibilityChannel:
     private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.DeferredComponentChannel:
@@ -3112,6 +3093,7 @@ io.flutter.embedding.engine.systemchannels.SettingsChannel:
     private static final java.lang.String ALWAYS_USE_24_HOUR_FORMAT
     private static final java.lang.String BRIEFLY_SHOW_PASSWORD
     public static final java.lang.String CHANNEL_NAME
+    private static final java.lang.String CONFIGURATION_ID
     private static final java.lang.String NATIVE_SPELL_CHECK_SERVICE_DEFINED
     private static final java.lang.String PLATFORM_BRIGHTNESS
     private static final java.lang.String TAG
@@ -3126,8 +3108,11 @@ io.flutter.plugin.common.ActivityLifecycleListener
 io.flutter.plugin.common.BasicMessageChannel:
     public static final java.lang.String CHANNEL_BUFFERS_CHANNEL
     private static final java.lang.String TAG
+    private static java.nio.ByteBuffer packetFromEncodedMessage(java.nio.ByteBuffer)
     public void resizeChannelBuffer(int)
-    static void resizeChannelBuffer(io.flutter.plugin.common.BinaryMessenger,java.lang.String,int)
+    public static void resizeChannelBuffer(io.flutter.plugin.common.BinaryMessenger,java.lang.String,int)
+    public static void setWarnsOnChannelOverflow(io.flutter.plugin.common.BinaryMessenger,java.lang.String,boolean)
+    public void setWarnsOnChannelOverflow(boolean)
 io.flutter.plugin.common.BinaryCodec
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger)
@@ -3157,6 +3142,7 @@ io.flutter.plugin.common.MethodChannel:
     private static final java.lang.String TAG
     public void <init>(io.flutter.plugin.common.BinaryMessenger,java.lang.String)
     public void resizeChannelBuffer(int)
+    public void setWarnsOnChannelOverflow(boolean)
 io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback
 io.flutter.plugin.common.PluginRegistry$Registrar
 io.flutter.plugin.common.PluginRegistry$ViewDestroyListener
@@ -3212,6 +3198,10 @@ io.flutter.plugin.editing.TextInputPlugin:
     public android.view.inputmethod.InputConnection getLastInputConnection()
 io.flutter.plugin.mouse.MouseCursorPlugin$2:
     private static final long serialVersionUID
+io.flutter.plugin.platform.ImageReaderPlatformViewRenderTarget:
+    private static final int MAX_IMAGES
+    private static final java.lang.String TAG
+    public boolean isReleased()
 io.flutter.plugin.platform.PlatformOverlayView:
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,android.util.AttributeSet)
@@ -3225,17 +3215,20 @@ io.flutter.plugin.platform.PlatformViewRegistry:
     public abstract boolean registerViewFactory(java.lang.String,io.flutter.plugin.platform.PlatformViewFactory)
 io.flutter.plugin.platform.PlatformViewRegistryImpl:
     public boolean registerViewFactory(java.lang.String,io.flutter.plugin.platform.PlatformViewFactory)
+io.flutter.plugin.platform.PlatformViewRenderTarget:
+    public abstract boolean isReleased()
 io.flutter.plugin.platform.PlatformViewWrapper:
     private static final java.lang.String TAG
-    public android.graphics.SurfaceTexture getTexture()
 io.flutter.plugin.platform.PlatformViewsController:
     private static final java.lang.String TAG
     public void disposePlatformView(int)
     public android.util.SparseArray getOverlayLayerViews()
 io.flutter.plugin.platform.SingleViewPresentation$WindowManagerHandler:
     private static final java.lang.String TAG
+io.flutter.plugin.platform.SurfaceTexturePlatformViewRenderTarget:
+    private static final java.lang.String TAG
+    public boolean isReleased()
 io.flutter.plugin.platform.VirtualDisplayController:
-    public void dispose()
     void onFlutterViewAttached(android.view.View)
     void onFlutterViewDetached()
 io.flutter.plugins.urllauncher.BuildConfig
@@ -3307,6 +3300,7 @@ io.flutter.view.FlutterView$ZeroSides
 io.flutter.view.FlutterView
 io.flutter.view.TextureRegistry$SurfaceTextureEntry:
     public abstract void release()
+io.flutter.view.TextureRegistry$TextureEntry
 io.flutter.view.TextureRegistry:
     public void onTrimMemory(int)
     public abstract io.flutter.view.TextureRegistry$SurfaceTextureEntry registerSurfaceTexture(android.graphics.SurfaceTexture)
@@ -9793,6 +9787,8 @@ io.flutter.embedding.engine.systemchannels.DeferredComponentChannel:
     static synthetic java.util.Map access$100(io.flutter.embedding.engine.systemchannels.DeferredComponentChannel)
     public void setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
 io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler$-CC
+io.flutter.embedding.engine.systemchannels.SettingsChannel:
+    static final synthetic boolean $assertionsDisabled
 io.flutter.plugin.common.BasicMessageChannel:
     private final io.flutter.plugin.common.BinaryMessenger$TaskQueue taskQueue
 io.flutter.plugin.common.BinaryMessenger$-CC
