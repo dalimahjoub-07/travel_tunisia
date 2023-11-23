@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       final response = await http.get(
         Uri.parse(
-            'https://api.github.com/repos/napolono/Lunar42/contents/images'),
+            'https://api.github.com/repos/dalimahjoub-07/travel-guide-tunisia/contents/images'),
       );
 
       if (response.statusCode == 200) {
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (item['type'] == 'file' &&
               item['name'] != null &&
               item['download_url'] != null &&
-              item['name'].endsWith('.jpeg','jpg')) {
+              item['name'].endsWith('.jpeg', 'jpg')) {
             imageUrls.add(item['download_url']);
           }
         }
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       final response = await http.get(
         Uri.parse(
-            'https://api.github.com/repos/napolono/Lunar42/contents/whatsappL'),
+            'https://api.github.com/repos/dalimahjoub-07/travel-guide-tunisia/contents/whatsapp_Links'),
       );
 
       if (response.statusCode == 200) {
