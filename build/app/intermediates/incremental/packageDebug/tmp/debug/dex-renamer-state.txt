@@ -1,4 +1,4 @@
-#Thu Nov 23 17:22:59 GMT+01:00 2023
+#Thu Nov 23 18:01:01 GMT+01:00 2023
 base.0=C\:\\Users\\dvl\\Desktop\\NF\\travel-guide-tunisia\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
