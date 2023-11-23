@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Color.fromARGB(255, 255, 255, 255),
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
-                    fontSize: 11)),
+                    fontSize: 20)),
           ),
         ),
       ),
