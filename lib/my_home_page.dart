@@ -137,14 +137,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 35, 195, 250),
         title: const Center(
-          child: Text.rich(
-            TextSpan(
-                text: 'Camp, Rando, Gîte, Resto, Hostel',
-                style: TextStyle(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                    fontStyle: FontStyle.italic,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20)),
+          child: Text(
+            'Camp, Rando, Gîte, Resto, Hostel',
           ),
         ),
       ),
