@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.travel_guide_tn"
+    namespace "com.bosiro.travel-guide-tn"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
