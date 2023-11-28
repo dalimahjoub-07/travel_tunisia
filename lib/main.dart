@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_guide_tn/my_home_page.dart';
+import 'package:tgtun/my_home_page.dart';
 
 void main() => runApp(const MyApp());
 

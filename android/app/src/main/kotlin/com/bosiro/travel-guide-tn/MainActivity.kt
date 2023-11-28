@@ -1,4 +1,4 @@
-package com.example.travel_guide_tn
+package com.bosiro.tgtun
 
 import io.flutter.embedding.android.FlutterActivity
 
