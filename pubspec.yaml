@@ -41,6 +41,7 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
+  flutter_native_splash: ^2.3.6
   flutter_test:
     sdk: flutter
 
@@ -53,7 +54,8 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_native_splash:
+  image:assets/bag.png
 # The following section is specific to Flutter packages.
 flutter:
 
