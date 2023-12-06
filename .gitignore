@@ -30,6 +30,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+/bosiro_app/
+/key.properties/
 
 # Symbolication related
 app.*.symbols
