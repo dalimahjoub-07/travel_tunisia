@@ -23,7 +23,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData(
         scrollbarTheme: ScrollbarThemeData(
-          thumbColor: MaterialStateProperty.all(Colors.white),
+          thumbColor:
+              MaterialStateProperty.all(Color.fromARGB(255, 0, 255, 191)),
         ),
       ),
       home: const MyHomePage(),
