@@ -4,7 +4,7 @@ import 'package:travel_tunisia/my_home_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Future.delayed(const Duration(seconds: 5));
+  await Future.delayed(const Duration(seconds: 3));
   FlutterNativeSplash.remove();
 
   runApp(const MyApp());

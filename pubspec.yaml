@@ -1,21 +1,9 @@
 name: travel_tunisia
 description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
+publish_to: 'none' 
+
+
 version: 1.0.2+1
 
 environment:
@@ -27,31 +15,39 @@ dependencies:
     sdk: flutter
   http: ^0.13.3  
   logging: ^1.0.0
-
+  cached_network_image: ^3.1.0
+  shared_preferences: ^2.0.7
 
   
   cupertino_icons: ^1.0.2
-  url_launcher: ^6.2.1
-  flutter_launcher_icons: ^0.13.1
+  url_launcher: ^6.0.13
+  
 
+    
   flutter_native_splash: ^2.3.6
 
 flutter_native_splash:
   android: true
-  ios: true
-  web: false
+  ios: false
+  web: true
   color: "#00E5FF"
   image: "lib/assets/bag.png"
   # background_image: "lib/assets/pex.png"
 
 dev_dependencies:
-  
-  flutter_test:
-    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
 
- 
+flutter_launcher_icons:
+  
   flutter_lints: ^2.0.0
 
+  android: "launcher_icon"
+  ios: false
+  image_path: "lib/assets/bag.png"
+  min_sdk_android: 16 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "lib/assets/bag.png"
 
 
   
@@ -64,5 +60,3 @@ flutter:
   
   assets:
     - lib/assets/logo-whatsapp-128.png
-
-  

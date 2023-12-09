@@ -1,10 +1,12 @@
 //my_home_page.dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart' as launcher;
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:logging/logging.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final Logger _logger = Logger('MyApp');
 
@@ -46,13 +48,18 @@ class _MyHomePageState extends State<MyHomePage> {
   List<String> imageUrls = [];
   List<String> whatsappLinks = [];
   late ScrollController _scrollController;
-
+  late SharedPreferences _preferences;
   @override
   void initState() {
     super.initState();
     _scrollController = ScrollController();
+    initializePreferences();
     fetchImageLinks();
     fetchWhatsAppLinks();
+  }
+
+  Future<void> initializePreferences() async {
+    _preferences = await SharedPreferences.getInstance();
   }
 
   Future<void> fetchImageLinks() async {
@@ -70,16 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
           if (item['type'] == 'file' &&
               item['name'] != null &&
               item['download_url'] != null &&
-              item['name'].endsWith('.jpeg')) {
-            imageUrls.add(item['download_url']);
-          } else {
-            item['type'] == 'file' &&
-                item['name'] != null &&
-                item['download_url'] != null &&
-                item['name'].endsWith('.jpg');
-            {
-              imageUrls.add(item['download_url']);
-            }
+              (item['name'].endsWith('.jpeg') ||
+                  item['name'].endsWith('.jpg'))) {
+            final imageUrl = item['download_url'];
+            imageUrls.add(imageUrl);
+            await precacheImage(CachedNetworkImageProvider(imageUrl), context);
+            // Save the image URL to SharedPreferences for future use
+            _preferences.setString(imageUrl, imageUrl);
           }
         }
 
@@ -88,10 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
         });
       } else {
         _logger.warning('Failed to load image links');
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error fetching image links'),
+          ),
+        );
       }
     } catch (e) {
       _logger.warning('Error fetching image links: $e');
-      // Show an error message to the user
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('An unexpected error occurred'),
+        ),
+      );
     }
   }
 
@@ -115,18 +128,14 @@ class _MyHomePageState extends State<MyHomePage> {
           }
         }
 
-        if (kDebugMode) {
-          print('WhatsApp Links: $whatsappLinks');
-        } // Add this line
-
         setState(() {
           this.whatsappLinks = whatsappLinks;
         });
       } else {
-        _logger.warning('Failed to load WhatsApp links');
+        print('Failed to load WhatsApp links');
       }
     } catch (e) {
-      _logger.warning('Error fetching WhatsApp links: $e');
+      print('Error fetching WhatsApp links: $e');
       // Show an error message to the user
     }
   }
@@ -167,26 +176,50 @@ class _MyHomePageState extends State<MyHomePage> {
                               title: Center(
                                 child: GestureDetector(
                                   onTap: () async {
-                                    const redirectLink =
-                                        'https://wa.me/21658154422';
+                                    await showDialog(
+                                      context: context,
+                                      builder: (context) => AlertDialog(
+                                        title: Text('Ouvrir le lien'),
+                                        content: Text(
+                                            'Voulez-vous ouvrir ce lien dans votre navigateur ?'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () =>
+                                                Navigator.pop(context),
+                                            child: Text('Cancel'),
+                                          ),
+                                          TextButton(
+                                            onPressed: () async {
+                                              final redirectLink =
+                                                  'https://wa.me/+21658154422/';
 
-                                    if (await launcher.canLaunchUrl(
-                                        Uri.parse(redirectLink))) {
-                                      await launcher
-                                          .launchUrl(Uri.parse(redirectLink));
-                                    } else {
-                                      if (kDebugMode) {
-                                        print('Could not launch $redirectLink');
-                                      }
-                                    }
+                                              if (await canLaunchUrl(
+                                                  Uri.parse(redirectLink))) {
+                                                await launchUrl(
+                                                    Uri.parse(redirectLink));
+                                              } else {
+                                                print(
+                                                    'Could not launch $redirectLink');
+                                              }
+                                              Navigator.pop(context);
+                                            },
+                                            child: Text('Open'),
+                                          ),
+                                        ],
+                                      ),
+                                    );
                                   },
                                   child: Container(
-                                    padding: const EdgeInsets.all(0.5),
+                                    constraints: kIsWeb
+                                        ? BoxConstraints(maxWidth: 400)
+                                        : null, // No constraints for other platforms
+                                    padding:
+                                        const EdgeInsets.fromLTRB(9, 1, 9, 1),
                                     color:
                                         const Color.fromARGB(255, 7, 189, 62),
                                     child: Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           WhatsAppUtils.getWhatsAppFileName(
@@ -199,7 +232,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                               color: Colors.white,
                                               fontSize: 23),
                                         ),
-                                        const SizedBox(width: 25),
+                                        SizedBox(
+                                          width: kIsWeb ? 30 : 25,
+                                        ),
                                         const Image(
                                           image: AssetImage(
                                               'lib/assets/logo-whatsapp-128.png'),
@@ -222,12 +257,19 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: const EdgeInsets.all(5.0),
                           child: ListTile(
                             title: Center(
-                              child: itemIndex < imageUrls.length
-                                  ? Image.network(
-                                      imageUrls[itemIndex],
-                                      fit: BoxFit.cover,
-                                    )
-                                  : const SizedBox(),
+                              child: Container(
+                                constraints: kIsWeb
+                                    ? BoxConstraints(maxWidth: 400)
+                                    : null,
+                                child: itemIndex < imageUrls.length
+                                    ? CachedNetworkImage(
+                                        imageUrl: imageUrls[itemIndex],
+                                        fit: BoxFit.cover,
+                                        memCacheWidth: 600,
+                                        memCacheHeight: 600,
+                                      )
+                                    : const SizedBox(),
+                              ),
                             ),
                           ),
                         );
